@@ -13,6 +13,7 @@ const randomIntegerFromInterval = (min, max) => {
 
 const startBtn = document.querySelector('[data-action="start"]');
 const stopBtn = document.querySelector('[data-action="stop"]');
+
 let timerId = null;
 
 const onStartClick = () => {
@@ -35,3 +36,5 @@ stopBtn.addEventListener("click", () => {
 
   startBtn.removeAttribute("disabled");
 });
+
+document.querySelector("ul").style.listStyle = "none";
